@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Grand Hotel & Catamaran Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Grand+Hotel&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS & JS -->
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Backroad Tour Co.</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="wrapper">
+        <div class="site-header--inner">
+          <div class="site-logo">
+            <img src="./assets/logo.svg" alt="" class="logo" />
+          </div>
+          <button class="nav-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+          <!-- navigation -->
+          <nav class="site-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#features">Featured</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--  hero-->
+      <section class="hero">
+        <div class="hero--inner flow">
+          <h1 class="hero-title">Continue Exploring</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            autem.
+          </p>
+          <a href="#" class="btn">Explore Tours</a>
+        </div>
+      </section>
+
+      <!--  About US-->
+      <section class="section" data-padding-block="large" id="about">
+        <div class="wrapper">
+          <h2 class="section-title">
+            About <span class="accent-clr">US</span>
+          </h2>
+          <div
+            class="grid-equal-cols about-us--inner"
+            data-gap="large"
+            data-align="center"
+          >
+            <div class="about-us-img">
+              <img src="./assets/about.jpeg" alt="shore" />
+            </div>
+            <div class="content flow">
+              <h3 class="content-title">Explore The Difference</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium iure voluptatem sed obcaecati, consequuntur vitae
+                doloremque rerum, quos sint amet consectetur, sequi quo deleniti
+                necessitatibus sit qui provident. Necessitatibus, itaque.
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  Services-->
+      <section class="section" id="services">
+        <div class="wrapper">
+          <h2 class="section-title">
+            Our <span class="accent-clr">Services</span>
+          </h2>
+          <div
+            class="grid-equal-cols services--inner"
+            data-justify-content="center"
+          >
+            <div class="card">
+              <span class="card-icon">
+                <i class="fas fa-wallet fa-fw"></i>
+              </span>
+              <div class="card-content">
+                <h4 class="card-title">Saving Money</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                  doloribus!
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <span class="card-icon">
+                <i class="fas fa-tree fa-fw"></i>
+              </span>
+              <div class="card-content">
+                <h4 class="card-title">Endless Hiking</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                  doloribus!
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <span class="card-icon">
+                <i class="fas fa-socks fa-fw"></i>
+              </span>
+              <div class="card-content">
+                <h4 class="card-title">Amazing Comfort</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                  doloribus!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Tours -->
+      <section class="section" id="features">
+        <div class="wrapper">
+          <h2 class="section-title">
+            Featured <span class="accent-clr">Tours</span>
+          </h2>
+          <!-- 4cards -->
+          <div class="tours-cards grid-auto-fit">
+            <div class="card">
+              <div class="tour-img-container">
+                <img src="./assets/tour-1.jpeg" alt="tibet" />
+                <p class="tour-date">August 26th, 2026</p>
+              </div>
+              <div class="tour-info">
+                <h4 class="tour-info--title">Tibet Adventure</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, modi?
+                </p>
+              </div>
+              <div class="tour-footer">
+                <p>
+                  <span>
+                    <i class="fas fa-map"></i>
+                    China
+                  </span>
+                </p>
+                <p>6 Days</p>
+                <p>From 2100$</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="tour-img-container">
+                <img src="./assets/tour-2.jpeg" alt="tibet" />
+                <p class="tour-date">October 1th, 2026</p>
+              </div>
+              <div class="tour-info">
+                <h4 class="tour-info--title">Best Of Java</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, modi?
+                </p>
+              </div>
+              <div class="tour-footer">
+                <p>
+                  <span>
+                    <i class="fas fa-map"></i>
+                    Indonesia
+                  </span>
+                </p>
+                <p>11 Days</p>
+                <p>From 1400$</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="tour-img-container">
+                <img src="./assets/tour-3.jpeg" alt="tibet" />
+                <p class="tour-date">September 15th, 2026</p>
+              </div>
+              <div class="tour-info">
+                <h4 class="tour-info--title">Explore Hong Kong</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, modi?
+                </p>
+              </div>
+              <div class="tour-footer">
+                <p>
+                  <span>
+                    <i class="fas fa-map"></i>
+                    Hong Kong
+                  </span>
+                </p>
+                <p>8 Days</p>
+                <p>From 5000$</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="tour-img-container">
+                <img src="./assets/tour-4.jpeg" alt="tibet" />
+                <p class="tour-date">December 5th, 2026</p>
+              </div>
+              <div class="tour-info">
+                <h4 class="tour-info--title">Kenya Highlights</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, modi?
+                </p>
+              </div>
+              <div class="tour-footer">
+                <p>
+                  <span>
+                    <i class="fas fa-map"></i>
+                    Kenya
+                  </span>
+                </p>
+                <p>20 Days</p>
+                <p>From 3300$</p>
+              </div>
+            </div>
+          </div>
+          <div class="tour-btn">
+            <a href="#" class="btn">All Tours</a>
+          </div>
+        </div>
+      </section>
+      <!-- form -->
+      <section class="section form-section">
+        <div class="wrapper">
+          <div class="grid-equal-cols">
+            <div class="form-content">
+              <h4 class="form-title">Want Latest Tour Info And Updates?</h4>
+              <p class="form-subtitle">
+                Sign up for newsletter and stay up to date
+              </p>
+            </div>
+            <div class="form-contact">
+              <input
+                type="text"
+                class="form-contact--input"
+                placeholder="Your Email"
+              />
+              <a href="#" class="btn contact-btn">Submit</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery -->
+      <section id="gallery">
+        <div class="grid-auto-fit" data-gap="no-gap" data-col-size="large">
+          <div class="single-img-container">
+            <img
+              src="./assets/tour-1.jpeg"
+              alt="gallery-img"
+              class="gallery-img"
+            />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="single-img-container">
+            <img
+              src="./assets/tour-6.jpeg"
+              alt="gallery-img"
+              class="gallery-img"
+            />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="single-img-container">
+            <img
+              src="./assets/tour-2.jpeg"
+              alt="gallery-img"
+              class="gallery-img"
+            />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="single-img-container">
+            <img
+              src="./assets/tour-3.jpeg"
+              alt="gallery-img"
+              class="gallery-img"
+            />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="single-img-container">
+            <img
+              src="./assets/tour-4.jpeg"
+              alt="gallery-img"
+              class="gallery-img"
+            />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="single-img-container">
+            <img
+              src="./assets/tour-5.jpeg"
+              alt="gallery-img"
+              class="gallery-img"
+            />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="single-img-container">
+            <img
+              src="./assets/tour-6.jpeg"
+              alt="gallery-img"
+              class="gallery-img"
+            />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="single-img-container">
+            <img
+              src="./assets/tour-2.jpeg"
+              alt="gallery-img"
+              class="gallery-img"
+            />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Site Footer -->
+    <footer class="site-footer">
+      <div class="wrapper">
+        <div class="site-footer--inner">
+          <!-- social -->
+          <div class="links">
+            <ul class="flex-dir-row">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#features">Features</a>
+              </li>
+              <li>
+                <a href="#gallery">Gallery</a>
+              </li>
+            </ul>
+          </div>
+          <!-- social -->
+          <div class="social flex-dir-row">
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+
+          <!-- rights -->
+
+          <div class="copyright">
+            <h4 class="stoop">Falcon's Stoop</h4>
+            <p>&copy;2026 Backroad Travel Tour co. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

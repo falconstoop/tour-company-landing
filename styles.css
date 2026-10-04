@@ -1,0 +1,184 @@
+@layer reset {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  button,
+  input,
+  label {
+    line-height: 1.1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  ul,
+  ol {
+    list-style: none;
+  }
+}
+
+@layer root {
+  /* Primitives */
+
+  @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+  :root {
+    /* colors */
+    --clr-primary-400: hsl(184, 91%, 17%);
+    --clr-primary-500: hsl(185, 62%, 45%);
+    --clr-primary-600: hsl(184, 80%, 74%);
+
+    --clr-grey-400: hsl(209, 61%, 16%);
+    --clr-grey-500: hsl(210, 22%, 49%);
+    --clr-grey-600: hsl(211, 27%, 70%);
+
+    /* fonts */
+    --ff-primary: "Lato", "sans serif";
+    --ff-accent: "Grand Hotel", "sans serif";
+  }
+
+  /* structured custom properties */
+  /* Semantics */
+  :root {
+    --clr-primary: var(--clr-primary-500);
+    --clr-primary-light: var(--clr-primary-600);
+    --clr-primary-dark: var(--clr-primary-400);
+
+    --clr-heading: var(--clr-grey-400);
+    --clr-paragh: var(--clr-grey-500);
+    --clr-paragh-light: var(--clr-grey-600);
+
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@layer base {
+  html {
+    /* smooth scrolling */
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--ff-primary);
+    background-color: #fff;
+    color: var(--clr-grey-500);
+
+    overflow-x: hidden;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
+  p {
+    color: var(--clr-grey-5);
+  }
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+      color: #000;
+    }
+    h3 {
+      font-size: 1.75rem;
+      color: #000;
+    }
+    h4 {
+      font-size: 1rem;
+      color: #000;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1;
+    }
+  }
+}
+
+@layer layout {
+}
+
+@layer components {
+  /* -----------Header---------- */
+
+  /* -----------Hero---------- */
+
+  /* -----------About US---------- */
+
+  /* -----------Services---------- */
+
+  /* -----------Featured Tours---------- */
+
+  /* -----------Form---------- */
+
+  /* -----------Gallery---------- */
+
+  /* -----------Footer---------- */
+
+  /* -----------Custom---------- */
+}
+
+@layer utilities {
+}

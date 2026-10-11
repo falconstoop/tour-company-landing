@@ -168,6 +168,10 @@
     &[data-max-width="medium"] {
       max-width: 1100px;
     }
+
+    &[data-max-width="narrow"] {
+      max-width: 900px;
+    }
   }
 
   .section {
@@ -211,6 +215,23 @@
       auto-fit,
       minmax(var(--auto-fit-min-col-size, 100%), 1fr)
     );
+
+    &[data-gap="no-gap"] {
+      --grid-auto-fit-gap: 0;
+    }
+
+    &[data-col-size="large"] {
+      --auto-fit-min-col-size: 300px;
+    }
+  }
+
+  /* Mostly used for Site-footer */
+  .flex-dir-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -293,7 +314,7 @@
 
   /* -----------Services---------- */
 
-  .services {
+  .services-section {
     background-color: #eee;
   }
 
@@ -369,10 +390,87 @@
   }
 
   /* -----------Form---------- */
+  .form-section {
+    background-color: var(--clr-primary-400);
+  }
+
+  .form-content {
+    @media (width < 760px) {
+      text-align: center;
+    }
+
+    h4 {
+      color: #fff;
+      font-size: 1.1rem;
+    }
+
+    p {
+      color: var(--clr-primary-light);
+    }
+  }
+  .form-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    padding-block: 1rem;
+
+    input {
+      flex: 1;
+      padding: 0.5rem;
+    }
+  }
 
   /* -----------Gallery---------- */
+  .single-img-container {
+    position: relative;
+
+    .gallery-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      font-size: 2rem;
+      color: #fff;
+
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .gallery-img {
+      transition: var(--transition);
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .gallery-icon {
+        opacity: 1;
+      }
+
+      .gallery-img {
+        opacity: 0.7;
+      }
+    }
+  }
 
   /* -----------Footer---------- */
+
+  .site-footer {
+    background-color: var(--clr-grey-400);
+  }
+
+  .site-footer--inner {
+    .links,
+    .social {
+      padding-block: 1rem;
+    }
+
+    .copyright {
+      text-align: center;
+    }
+  }
 
   /* -----------Custom---------- */
   .btn {
